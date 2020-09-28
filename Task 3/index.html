@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screening | Cybersec Clinique</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container" >
+      <div class="row col-md-8 col-md-offset-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>COVID19-CheckList</h1>
+            <a href="#"><img src="images/logo-white.png" alt="" title="" height="45" width="200"/></a>
+          
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post" >
+              <img src="images/coronavirus-safety-tw.jpg" width="100%" class="img-fluid" alt="">
+              
+              <div class="form-group">
+                <label for="sName">In which area do you live?</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sName"
+                  name="sName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="improve">Have you been in contact with a person diagnosed with COVID-19 in the past 7 days?</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="improve"
+                  name="improve"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Loss of smell / taste</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="rate"
+                      value="0 - 3 Stars"
+                      id="0 - 3 Stars"
+                    />0 - 3 Stars</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="rate"
+                      value="4 - 7 Stars"
+                      id="4 - 7 Stars"
+                    />4 - 7 Stars</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="rate"
+                      value="8 - 10 Stars"
+                      id="8 - 10 Stars"
+                    />8 - 10 Stars</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Personal Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="module">Muscle pain</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="module"
+                  name="module"
+                />
+              </div>
+              <div class="form-group">
+                <label for="topic">Diarrhoea</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="topic"
+                  name="topic"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ments">Weakness</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ments"
+                  name="ments"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+              <?php
+date_default_timezone_set("Africa/Johannesburg");
+echo "The time is " . date("h:i:sa");
+?>
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; COVID-Screening</small>
+          </div>
+        </div>
+        <a href="dashboard.php" >
+   <input type="button" value="Done"  />
+</a>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+ 
+
+</div>
+  </body>
+</html>
